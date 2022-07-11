@@ -3,6 +3,19 @@ import subprocess
 import glob
 import pandas as pd
 import statistics as stat
+import itertools
+from math import comb
+
+# Number of embedded nodes
+embN = 3
+
+#Node names
+nme = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+# Initialise an empty list for column names
+cln = []
+for x in range(0,embN):
+    cln.append(nme[x])
 
 cwd = os.getcwd()
 
